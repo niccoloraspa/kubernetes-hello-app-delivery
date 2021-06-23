@@ -5,7 +5,7 @@ kind: Kustomization
 namespace: team-a
 
 resources:
-  - hello-ns.yaml
-  - hello-app.yaml
-  - hello-svc.yaml
-  - hello-ingress.yaml
+  - ns.yaml
+  - app.yaml
+  - svc.yaml
+  - ingress.yaml
