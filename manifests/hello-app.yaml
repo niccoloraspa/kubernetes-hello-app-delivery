@@ -2,26 +2,26 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: team-a-app
-  namespace: team-a
+  name: hello-app
+  namespace: hello
   labels:
-    app: team-a
+    app: hello
 spec:
   selector:
     matchLabels:
-      app: team-a
+      app: hello
       tier: web
   template:
     metadata:
       labels:
-        app: team-a
+        app: hello
         tier: web
     spec:
       containers:
-      - name: team-a-app
+      - name: hello-app
         image: gcr.io/google-samples/hello-app:1.0
         ports:
         - containerPort: 8080
         resources:
           requests:
-            cpu: 50m
+            cpu: 200m

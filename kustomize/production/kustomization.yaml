@@ -2,10 +2,11 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-namespace: team-a
+namespace: kustomize-prod
 
 resources:
   - ../bases
+  - ns.yaml
 
 patchesStrategicMerge:
   - production-patch.yaml
