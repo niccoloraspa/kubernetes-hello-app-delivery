@@ -84,8 +84,10 @@ kubectl apply --filename roles.yaml
 - Select: Multibranch Pipeline
 - Click: OK
 - Branch Sources: Git
-- Project Repository: GIT_URL
+- Project Repository: https://github.com/nikever/kubernetes-hello-app-delivery.git
 - Build Configuration: Jenkinsfile
-- Script Path: Jenkinsfile
+- Script Path: jenkins-kaniko-kustomize/Jenkinsfile 
 - Enable Discard Old Builds
 - Click: Save
+
+# IMPORTANT! After save, Jenkins scan branch and build pipeline automatically. Stop build pipeline and trigger it manually.
